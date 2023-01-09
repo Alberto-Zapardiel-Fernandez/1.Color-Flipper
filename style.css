@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* Colors */
+  --main-color-black: #000;
+  --main-color-blue: #4b7dc6;
+  --main-color-white: #fff;
+  --main-color-red: #f14646;
+  /* Font */
+  --main-font-size: 22px;
+  --main-title-size: 32px;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+}
+
+/* NAV BAR */
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: var(--main-font-size);
+  background-color: var(--main-color-white);
+}
+.title {
+  color: var(--main-color-blue);
+}
+.buttons {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Each Button */
+.btn-nav {
+  padding: 4px;
+  font-size: var(--main-font-size);
+  background-color: var(--main-color-white);
+  border: none;
+}
+.btn-nav:hover {
+  color: var(--main-color-blue);
+  cursor: pointer;
+}
+.btn-selected {
+  background-color: var(--main-color-red);
+}
+/* Container */
+
+.principal {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container {
+  font-family: var(--ff-primary);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2%;
+  background-color: var(--main-color-black);
+  margin-bottom: 20px;
+}
+
+.background-color {
+  font-size: var(--main-title-size);
+  color: var(--main-color-white);
+}
+.background-color span {
+  color: var(--main-color-blue);
+}
+
+.btn-change-color {
+  font-family: var(--ff-primary);
+  font-size: var(--main-font-size);
+  padding: 0.75rem;
+  width: 12vw;
+  background-color: transparent;
+  border-radius: 10%;
+  transition: all 0.5s ease;
+}
+.btn-change-color:hover {
+  cursor: pointer;
+  background-color: var(--main-color-black);
+  color: var(--main-color-white);
+}
